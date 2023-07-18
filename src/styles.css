@@ -1,0 +1,65 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  background: url("../pic/bg.jpg");
+  background-size: cover;
+}
+
+h1 {
+  margin-top: -30px;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  word-spacing: 0.2em;
+  color: white;
+}
+
+canvas {
+  margin-top: -200px;
+  width: 700px;
+  height: 400px;
+  background: white;
+  border: 25px solid black;
+  border-radius: 10px;
+}
+.shake {
+  color: black;
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+canvas.buttons {
+  animation: shake 0.5s linear 1;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
